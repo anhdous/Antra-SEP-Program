@@ -1,0 +1,51 @@
+table,th, td {
+  border: 1px solid black;
+
+}
+th, td{
+  width: 120px;
+  height:120px;
+  font-size: 1.5em;
+  padding: 6px;
+}
+
+th{
+  font-size: 3em;
+}
+.google{
+  text-align: left;
+  vertical-align: top;
+}
+.github{
+  text-align: right;
+  vertical-align: top;
+}
+.fb{
+  text-align: center;
+  vertical-align: top;
+}
+.gmail,.wc{
+  vertical-align: middle;
+}
+.youtube{
+  text-align: center;
+  vertical-align: bottom;
+}
+.food{
+  text-align: right;
+  vertical-align: bottom;
+}
+.game{
+  text-align: left;
+  vertical-align: bottom;
+}
+.social-life,.sleep{
+height: 50px;
+font-size: 0.75em;
+text-align: center;
+vertical-align: middle;
+}
+.beer{
+  text-align: right;
+  vertical-align: middle;
+}
