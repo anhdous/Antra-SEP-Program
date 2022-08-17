@@ -1,0 +1,27 @@
+table,th, td {
+  border: 1px solid black;
+
+}
+th, td{
+  width: 120px;
+  height:120px;
+  font-size: 1.5em;
+  padding: 6px;
+}
+button{
+  width: 100%;
+  height:100%;
+  font-size: 1em;
+}
+.header{
+  background-color: rgb(239, 179, 189);
+}
+.social-life,.sleep{
+  height: 40px;
+  font-size: 0.75em;
+
+  }
+  .beer{
+    text-align: right;
+    vertical-align: middle;
+  }
