@@ -1,0 +1,88 @@
+footer{
+  width: 100%;
+  background-color: rgb(30, 37, 37);
+  color: aliceblue;
+  font-family: Arial;
+}
+.section1{
+  width: 28%;
+  display: inline-block;
+  vertical-align: top;
+
+}
+.section1 p,h4 {
+  padding-left: 35%;
+  line-height: 18px;
+}
+.section2, .section3{
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 0px;
+}
+.section2 li, .section3 li{
+  text-align: left;
+  list-style: none;
+}
+.section2 li a, .section3 li a{
+text-decoration: none;
+color: white;}
+
+.section4{
+  width: auto;
+  display: inline-block;
+}
+.section4 img{
+  width: 300px;
+  display: inline-block;
+}
+.section4 p {
+  font-size: 20px;
+}
+ul{
+font-size: 20px;
+}
+ul li{
+  line-height: 40px;
+  font-size: 16px;
+
+}
+p{
+  font-size: 14px;
+  line-height: 75%;
+}
+.section5{
+  background-color: black;
+  height: 50px;
+
+}
+.section5 p{
+margin-left: 100px;
+display: inline-block;
+float: left;
+}
+.section5 img{
+  display: block;
+  float: right;
+  margin-top: 12px;
+  margin-left: 12px;
+  
+}
+.linkedin-logo{
+  border-radius: 0px;
+  width: 18px;
+  padding-top: 3px;
+  margin-right:100px;
+}
+.facebook-logo{
+  border-radius: 12px;
+  height: 24px;
+}
+
+.twitter-logo{
+  border-radius: 12px;
+  height: 24px;
+}
+hr{
+  border: 0.3px solid rgb(114, 113, 113);
+}

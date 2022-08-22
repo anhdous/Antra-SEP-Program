@@ -1,0 +1,123 @@
+.header {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 300px auto;
+  padding: 10px 0px 10px 0px;
+  background-color: rgb(25, 3, 104);
+}
+.logo-section{
+  justify-content: center;
+  padding: 12px 20px;
+  }
+  .logo-picture{
+    height: 80px;
+    background-color: rgb(86, 8, 159);
+  }
+  .search-section{
+    justify-content:end;
+    grid-template-columns: 30px 250px 40px;
+    display: grid;
+    margin-right: 45px;
+    margin-top: 10px;
+  }
+  .notification-icon{
+    height: 25px;
+    margin-top: 8px;
+  }
+  .search-bar{
+    height:36px;
+    padding-left: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(231, 230, 230);
+    border-radius: 4px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    }
+    .search-button{
+      height: 40px;
+      width: 40px;
+      background-color: rgb(240,240,240);
+      border-style: solid;
+      border-color: rgb(192,192,192);
+      border-radius: 4px;
+      border-width: 1px;
+      margin-left: -4px;
+
+      }
+  .search-icon{
+      width: 30px;
+      height: 30px;
+      margin-top: 6px;
+      border-radius: 4px;
+  }
+  .narbar-section{
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .menu-section{
+    display: grid;
+    width: 100%;
+    position: fixed;
+
+  }
+  .menu-section > ul{
+    padding: 0;
+    display: inline-block;
+    color: white;
+    font-weight: 900;
+  }
+  .menu-section li {
+    padding: 0px 28px;
+    text-decoration: none;
+  }
+  .menu-section li:hover{
+    color: rgb(11, 10, 10);
+    background-color:powderblue;
+  }
+  
+
+  .menu-section >ul>li{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    letter-spacing: 1px;
+    }
+  .dropdown{
+    position: absolute;
+    top: 100%;
+    left:0;
+    width: 100%;
+    padding: 0;
+  
+  }
+  .dropdown li{
+    color: white;
+    background:powderblue;
+    display: none;
+  
+  }
+  .dropdown li:hover{
+    color: rgb(5, 5, 5);
+    background:powderblue;
+  
+  }
+  .menu-section li:hover>.dropdown li{
+    transform-origin: top center;
+    display: block;
+  
+  }
+  
+  a:hover{
+    color: rgb(17, 16, 16);
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
