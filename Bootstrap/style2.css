@@ -1,0 +1,38 @@
+.header-picture{
+  width: 100%;
+}
+.active .nav-link, .nav-link{
+  color: black;
+  background-color: lightgray;
+}
+
+.nav-item:hover .nav-link{
+  background-color: lightgray;
+  color: black;
+}
+h5{
+  text-align: left;
+
+}
+.slogan{
+  font-size: 2em;
+  width: 70%;
+  margin:  15px auto;
+  padding: 15px;
+}
+.row>.col-4> p{
+  margin:30px;
+  font-size: 1.8em;
+
+}
+.row>.col-4 a{
+  text-decoration: none;
+  color: black;
+}
+.carousel-item,.view{
+margin: 15px 0px;
+}
+
+h1{
+  margin-top: 15px;
+}

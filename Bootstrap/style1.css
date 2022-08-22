@@ -1,0 +1,20 @@
+.alert, .btn,p,.form-check{
+  font-size: 0.80em;
+}
+.btn-apple img, .btn-google img{
+  height: 16px;
+  float:left;
+}
+.btn-google,.btn-apple{
+  margin: 12px 0px;
+
+}
+.alert{
+  margin: 12px 12px ;
+}
+.btn-signin{
+  margin-bottom: 12px;
+}
+.header{
+  margin-top: 20px;
+}

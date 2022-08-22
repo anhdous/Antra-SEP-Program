@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropbox Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row text-center header align-items-center">
+      <div class="col">
+        <a class="btn btn-outline-primary" href="https://www.dropbox.com/business" role="button">Try Bropbox Business</a>
+      </div>
+      <div class="col-auto">
+        <a href="https://www.dropbox.com">
+          <img src="https://cfl.dropboxstatic.com/static/metaserver/static/images/logo_catalog/dropbox_logo_glyph_2015_m1.svg" width="46px">
+          <img src="https://cfl.dropboxstatic.com/static/metaserver/static/images/logo_catalog/dropbox_logo_text_2015_m1.svg" width="120px">
+        </a>
+      </div>
+      <div class="col">
+        <p><a href="https://www.dropbox.com/downloading?src=index">Download the app</a></p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+          Dropbox Passwords remembers your login credentials, so you don't have to.<a href="https://www.dropbox.com/getpasswords" class="alert-link">Try Dropbox password</a>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="w-100"></div>
+
+      <div class="col-md-3"> 
+        <img src="dropbox-image.png" width="100%">
+      </div>
+
+      <div class="col-md-3">
+       <div class="row">
+        <div class="col-6" >
+          <p style="font-size: 1em;"> Sign in</p>
+        </div>
+        <div class="col-6" >
+          <p>or <a href="https://www.dropbox.com/login#">create an account</a></p>
+        </div>
+       </div>
+
+        <a href="https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=801668726815.apps.googleusercontent.com&include_granted_scopes=true&prompt=select_account&redirect_uri=https%3A%2F%2Fwww.dropbox.com%2Fgoogle%2Fauthcallback&response_type=code&scope=email+profile&state=AEZZp-sT1GGlYS2NDuw2XN2aJnEBrzZhmGtXJDoMexI7dRauuulSM1pqAAl15LyuBkA9PeqlHkH1RUhAgFzBITa_F6F4uTwl7vePTCR7M381ZkLl6SHsMyoXBZH6EfGFfle4puYe8AY4bqeg8JrwNCM3KPptjJDKFk54ukHuVBpqvtLIhQmtkoNpPqZ8tKUppA881x3uz-f3J8uIBMFtp-sa6hAK2u2weISW726ag7KaqFXAGUoVsiB9nUkyPzuZsUXostYZ7ub0R6doCujDdj6LkWbpfDjCcWmZJtuOPrQ1_0UGyKR1lVkO9LK39TG2vzasFtNpHLDdczCnVIpCH0fXFmBMb8M52oW1-QkU97dqPG2NNNuRUYUuFxxQ_kWE4Hs"><button class="btn btn-google btn-primary col-12"><img src="google-logo.png"> Sign in with Google</button></a>
+        <a href="https://appleid.apple.com/auth/authorize?client_id=com.dropbox.Backend&redirect_uri=https%3A%2F%2Fwww.dropbox.com%2Fapple%2Fauthcallback&response_mode=form_post&response_type=code&scope=name%20email&state=AEZRxDW5K_rdNu9NvJmC5kQ_GDd_1l4nnMqMl__XORzlMib_7_YYWBVj4chjLUCrvF8FEwldMDti2QRB4VX_xalIdXioKGndN0W9LuFHVYiqWoobYnG5-0QKa8p9aTkXiBlRlumzWonssUA_Cs1Z88o8dA3ixScs7q6rUonP_mX7XQsaZ4EJl5E3YoeP-Llpx35QFu3gNgyisoYfaMExzGoVMuplJvL5ku90D0kvcnelFIBsvge50xd-XdSp-jGofRBC6naryYMpohBRZY8wfQ_ZpSNRw8_yZ3TLnf2xRUdngtUjMGMuaO-5VFNno8S2ZGJ7aFUiqJahfr4KvFPZRv_f4FvsoU5VGA4DfbEB3fHIYD7jeK5DnGvxOMy-HhjCkAsmhQlVxn3GL4fJgfGcoMKZ"><button class="btn btn-apple btn-dark col-12"><img src="apple-logo.png"> Sign in with Apple</button></a>
+
+        <div class="row">
+          <div class="col"><hr></div>
+          <div class="col-auto">or</div>
+          <div class="col"><hr></div>
+        </div>
+       
+       <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password">
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox" checked>
+            <label class="form-check-label" for="checkbox">
+              Remember me
+            </label>
+          </div>
+        </div>
+        <div class="col-6" >
+          <input class="btn btn-signin btn-primary float-end" type="submit" value="Sign in">
+        </div>
+      </div>
+
+      <a href="https://www.dropbox.com/forgot?email_from_login="><p>Forgot your password</p></a>
+
+
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
