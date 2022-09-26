@@ -1,1 +1,33 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" style="margin-left: 2%;">MovieShop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="''">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/Genre'">Genres</a>
+      </li>
+      <div *ngIf="!LoggedIn">
+        <li class="nav-item" style="position: absolute; right: 9%;">
+          <a class="btn btn-primary" [routerLink]="'/Account/Login'">Login</a>
+        </li>
+        <li class="nav-item" style="position: absolute; right: 2%;">
+          <a class="btn btn-primary" [routerLink]="'/Account/Register'">Register</a>
+        </li>
+      </div>
+      <div *ngIf="LoggedIn">
+        <li class="nav-item" style="position: absolute; right: 9%; padding-top: 9px;">
+          <a class="nav-item" style="text-decoration: none;">Hi {{User.given_name}} {{User.family_name}}</a>
+        </li>
+        <li class="nav-item" style="position: absolute; right: 2%;">
+          <a class="btn btn-primary" [routerLink]="'/'" role="button" (click)="Logout()">Logout</a>
+        </li>
+      </div>
+    </ul>
+  </div>
+</nav>

@@ -1,1 +1,134 @@
-<p>movie-details works!</p>
+<div class="rounded">
+  <div class="container-fluid">
+      <div class="row" id ="movie-section" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url({{movieDetails.backdropUrl}}); background-size: cover;">
+          <div class="col-4 text-center">
+              <img src="{{movieDetails.posterUrl}}" id="movie-detail-poster"/>
+          </div>
+          <div class="col-5" style="color: white">
+              <h2>
+                  {{movieDetails.title}}
+              </h2>
+              <p style="font-size:0.75em;">
+                  {{movieDetails.tagline}}
+              </p>
+              <div class="row">
+                  <div class="col-auto">
+                      <p>{{movieDetails.runTime}} m | {{movieDetails.releaseDate}}</p>
+                  </div>
+                  <div class="col-auto" *ngFor="let genre of movieDetails.genres">
+                          <span class="badge rounded-pill bg-secondary"><a>{{genre.name}}</a></span>  
+                  </div>
+              </div>
+              <span class="badge bg-success">8.9</span>
+              <p style="margin-top: 25px;font-size:0.8em;">{{movieDetails.overview}}</p>
+          </div>
+          
+          <div class="col-3 text-center">
+              <div class="row">
+                  <div class="col">
+                      <a><button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#reviewModal" style="width:85%; margin: 50px 0px 20px 0px;">REVIEW</button></a>
+                  </div>
+              </div>
+              <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="reviewModalLabel">Review</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              <div class="dropdown">
+                                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Rate this movie
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                      <li class="dropdown-item">1</li>
+                                      <li class="dropdown-item">2</li>
+                                      <li class="dropdown-item">3</li>
+                                      <li class="dropdown-item">4</li>
+                                      <li class="dropdown-item">5</li>
+                                      <li class="dropdown-item">6</li>
+                                      <li class="dropdown-item">7</li>
+                                      <li class="dropdown-item">8</li>
+                                      <li class="dropdown-item">9</li>
+                                      <li class="dropdown-item">10</li>
+                                  </ul>
+                              </div>
+                              <form>
+                                  <div class="mb-3">
+                                      <label for="review-text" class="col-form-label">Review:</label>
+                                      <textarea class="form-control" id="review-text"></textarea>
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="modal-footer">
+                              <input type="submit" value="Submit" class="btn btn-secondary" data-bs-dismiss="modal"/>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+              <div class="row">
+                  <div class="col">
+                      <button type="button" class="btn" id="buy-button" data-bs-toggle="modal" data-bs-target="#buyModal">BUY ${{movieDetails.price}}</button>
+                  </div>
+              </div>                
+              <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="buyModalLabel">Confirmation</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              Price: {{movieDetails.price}}
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Purchase</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+
+      </div>
+      <br/>
+      <div class="row">
+          <div class="col-4">
+              <h5>MOVIE FACTS</h5>
+              <hr>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Release Date <span class="badge rounded-pill bg-dark">{{movieDetails.releaseDate}}</span></li>
+                  <li class="list-group-item">Run Time <span class="badge rounded-pill bg-dark">{{movieDetails.runTime}} m</span></li>
+                  <li class="list-group-item">Box Office <span class="badge rounded-pill bg-dark">{{movieDetails.runTime}} </span></li>
+                  <li class="list-group-item">Budget <span class="badge rounded-pill bg-dark">{{movieDetails.budget}}</span></li>
+              </ul>
+              <br/>
+              <h5>TRAILERS</h5>
+              <hr>
+              <ul class="list-group list-group-flush" *ngFor="let trailer of movieDetails.trailers">
+                      <li class="list-group-item" >{{trailer.name}}</li>
+              </ul>
+          </div>
+          
+          <div class="col-auto">
+              <h5>CAST</h5>
+              <hr>
+              <ul class="list-group list-group-flush" *ngFor="let cast of movieDetails.casts">
+                      <li class="list-group-item">
+                          <ul class="list-group list-group-horizontal">
+                              <li class="list-group-item border-0">
+                                  <a [routerLink]="['/Cast-Details/', cast.id]">
+                                      <img class="rounded-circle" style="height:35px" src="{{cast.profilePath}}"/>
+                                  </a>
+                              </li>
+                              <li class="list-group-item border-0" style="width:200px;">{{cast.name}} </li>
+                              <li class="list-group-item border-0">{{cast.character}}</li>
+                          </ul>
+                  </li>
+                </ul>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- [routerLink]="['/Movie-Details/', movie.id]"  -->
